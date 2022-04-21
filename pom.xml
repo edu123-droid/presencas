@@ -7,6 +7,18 @@
     <groupId>pt.esgs</groupId>
     <artifactId>presencas</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
@@ -21,5 +33,12 @@
     </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>mvn-brunojesus</id>
+            <name>Bruno Jesus MVN Repo</name>
+            <url>https://mvn.brunojesus.pt/releases</url>
+        </repository>
+    </repositories>
 
 </project>
